@@ -34,7 +34,7 @@ file(REMOVE_RECURSE "${SOURCE_PATH}/third-party/expat")
 # Configure with external CMakeLists in the overlay
 vcpkg_cmake_configure(
     SOURCE_PATH "${CMAKE_CURRENT_LIST_DIR}"
-    OPTIONS -DSOURCE_PATH="${SOURCE_PATH}"
+    OPTIONS "-DSOURCE_PATH=${SOURCE_PATH}"
 )
 
 vcpkg_cmake_install()

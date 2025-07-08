@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 project(XMPToolkitSDK LANGUAGES CXX)
 
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 if(NOT DEFINED SOURCE_PATH)
     message(FATAL_ERROR "SOURCE_PATH must be defined")
 endif()
@@ -158,6 +161,9 @@ target_compile_definitions(XMPFilesStatic PRIVATE
     XMP_StaticBuild=1
     ${XMP_PLATFORM_DEFS}
 )
+if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
+    target_compile_definitions(XMPFilesStatic PRIVATE NO_EXCEPT_FALSE=noexcept)
+endif()
 
 # Output names
 set_target_properties(XMPCoreStatic PROPERTIES OUTPUT_NAME "XMPCoreStatic")
