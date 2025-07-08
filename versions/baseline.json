@@ -1,9 +1,5 @@
 {
   "default": {
-    "cmp-toolkit-sdk": {
-      "baseline": "1.0.0",
-      "port-version": 0
-    },
     "xmp-toolkit-sdk": {
       "baseline": "1.0.0",
       "port-version": 0
