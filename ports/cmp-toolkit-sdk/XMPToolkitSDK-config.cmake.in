@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Find the dependencies that your static libraries need
+find_dependency(ZLIB REQUIRED)
+find_dependency(expat CONFIG REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/XMPToolkitSDK-targets.cmake")

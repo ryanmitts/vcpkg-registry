@@ -1,0 +1,4 @@
+The package xmp-toolkit-sdk provides CMake targets:
+
+    find_package(XMPToolkitSDK CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE XMPToolkitSDK)
