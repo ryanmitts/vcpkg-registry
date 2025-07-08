@@ -5,6 +5,7 @@
   "homepage": "https://github.com/adobe/XMP-Toolkit-SDK",
   "license": "BSD-3-Clause",
   "dependencies": [
+    "expat",
     {
       "name": "vcpkg-cmake",
       "host": true
@@ -13,13 +14,11 @@
       "name": "vcpkg-cmake-config",
       "host": true
     },
-    "expat",
     "zlib"
   ],
   "features": {
     "samples": {
-      "description": "Build XMP Toolkit samples",
-      "dependencies": []
+      "description": "Build XMP Toolkit samples"
     }
   }
 }
