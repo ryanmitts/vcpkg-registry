@@ -146,6 +146,7 @@ target_compile_definitions(XMPCoreStatic PRIVATE
     BUILDING_XMPCORE_AS_STATIC=1
     XMP_COMPONENT_INT_NAMESPACE=AdobeXMPCore_Int
     XMP_INCLUDE_XMPFILES=1
+    XMP_StaticBuild=1
     ${XMP_PLATFORM_DEFS}
 )
 target_compile_definitions(XMPFilesStatic PRIVATE 
@@ -154,6 +155,7 @@ target_compile_definitions(XMPFilesStatic PRIVATE
     BUILDING_XMPFILES_AS_STATIC=1
     XMP_COMPONENT_INT_NAMESPACE=AdobeXMPFiles_Int
     XMP_INCLUDE_XMPFILES=1
+    XMP_StaticBuild=1
     ${XMP_PLATFORM_DEFS}
 )
 
